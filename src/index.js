@@ -63,11 +63,14 @@ class App extends Component {
       // get all accounts
       const accounts = await this.state.ocean.accounts.list();
       // get our registered asset
-      const consumeAsset = this.state.ddo;
+      // const consumeAsset = this.state.ddo;
       // get service we want to execute
-      const service = consumeAsset.findServiceByType('access');
+      // const service = consumeAsset.findServiceByType('access');
       // order service agreement
 
+      let search = await this.state.ocean.assets.search('testtmc2002');
+      let consumeAsset = search.results[0];
+      let service = consumeAsset.findServiceByType('access');
       debugger;
       const agreement = await this.state.ocean.assets.order(
         consumeAsset.id,

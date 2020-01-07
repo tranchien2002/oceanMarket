@@ -1,11 +1,11 @@
 const asset = {
   main: {
-    name: '10 Monkey Species Small',
+    name: 'pricetest',
     dateCreated: '2012-02-01T10:55:11Z',
     author: 'Mario',
     type: 'dataset',
     license: 'CC0: Public Domain',
-    price: '0',
+    price: '5000000000000000',
     files: [
       {
         index: 0,
